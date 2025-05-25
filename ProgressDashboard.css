@@ -1,0 +1,144 @@
+.dashboard {
+  padding: 2rem;
+  background-color: #0d1117; /* darker background */
+  color: #c9d1d9; /* softer white for dark mode */
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.dashboard-header h1 {
+  font-size: 2.2rem;
+  color: #f0f6fc;
+}
+
+.action-buttons button {
+  margin: 0.5rem;
+  padding: 10px 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.create-btn {
+  background-color: #238636;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(35, 134, 54, 0.4);
+}
+
+.start-btn {
+  background-color: #1f6feb;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(31, 111, 235, 0.4);
+}
+
+.create-btn:hover,
+.start-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.stats-container {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background-color: #161b22;
+  padding: 1.5rem;
+  border-radius: 12px;
+  flex: 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h2 {
+  font-size: 1.3rem;
+  color: #8b949e;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #58a6ff;
+}
+
+.quiz-section {
+  margin-bottom: 2rem;
+}
+
+.quiz-section h2 {
+  margin-bottom: 1rem;
+  color: #f0f6fc;
+}
+
+.quiz-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.quiz-tag {
+  background-color: #21262d;
+  color: #c9d1d9;
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: 1px solid #30363d;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.quiz-tag:hover {
+  background-color: #30363d;
+  transform: translateY(-2px);
+}
+
+.results-section h2 {
+  color: #f0f6fc;
+  margin-bottom: 1rem;
+}
+
+.results-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.results-section li {
+  background-color: #161b22;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  color: #c9d1d9;
+  border: 1px solid #30363d;
+}
+
+@media (max-width: 768px) {
+  .stats-container {
+    flex-direction: column;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
